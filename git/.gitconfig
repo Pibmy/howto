@@ -1,0 +1,16 @@
+[core]
+	excludesfile = ~/.gitignore 				# Path to your core .gitignore file
+	attributesfile = ~/.gitattributes			# Path to your core .gitattributes files
+
+[user]
+	name = "USERNAME"							# Your USERNAME
+	email = mail@domain.com						# Your email
+	
+	
+[http "https://your.domain.com"]				# Specific domain configuration
+	sslCAInfo = ~/.ssh/domain/id_rsa			# Path to ssh id_rsa to use for https://your.domain.com
+	sslBackend = openssl						# ssl backend to use
+
+[http "https://gitlab.com"]						# Specific domain configuration
+	sslCAInfo = ~/.ssh/gitlab/id_rsa			# Path to ssh id_rsa to use for https://gitlab.com
+	sslBackend = openssl
